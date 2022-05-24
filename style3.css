@@ -155,6 +155,7 @@ li img {
     width: 60vw;
     margin: auto;
     align-content: center;
+    height: 500px;
 }
 
 .z-index {
@@ -399,7 +400,12 @@ footer {
     }
 
     .fa-solid {
-        /* fa-solid fa-burger; */
-        visibility: visible;
+                visibility: visible;
+    }.container2 {
+        max-width: 60vw;
+        width: 60vw;
+        margin: auto;
+        align-content: center;
+        height: 700px;
     }
 }
