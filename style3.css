@@ -154,6 +154,7 @@ li img {
     max-width: 60vw;
     width: 60vw;
     margin: auto;
+    align-content: center;
 }
 
 .z-index {
@@ -179,8 +180,6 @@ p {
 .list-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: auto; */
-    /* column-gap: 60px; */
     justify-content: space-between;
 }
 
@@ -199,7 +198,7 @@ img {
     border-radius: 25px;
     box-shadow: 5px 5px 15px black;
     justify-self: center;
-    /* position: relative; */
+
 }
 
 .marg-nav {
@@ -237,7 +236,6 @@ img {
 }
 
 .fa-solid {
-    /* fa-solid fa-burger; */
     visibility: hidden;
 }
 
@@ -273,6 +271,36 @@ footer {
 }
 
 /* grid */
+#main {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 7vh 80vh auto auto auto;
+    grid-template-areas: "nav nav nav nav nav nav nav nav nav nav"
+        "hd hd hd hd hd hd hd hd hd hd"
+        "sect sect sect sect sect sect sect sect sect sect"
+        "gr gr gr gr gr gr gr gr gr gr"
+        "foot foot foot foot foot foot foot foot foot foot";
+
+
+
+}
+
+#nav {
+    grid-area: nav;
+}
+
+#hd {
+    grid-area: hd;
+}
+
+#sect {
+    grid-area: sect;
+}
+
+#foot {
+    grid-area: foot;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 3fr;
@@ -283,14 +311,34 @@ footer {
     grid-template-columns: 1fr 1fr;
 }
 
-#a{ grid-area:a;display: flex;justify-content: center;}
-#b{grid-area: b;}
-#c{grid-area: c;}
-#d{grid-area: d;}
-#e{grid-area: e;}
-#f{grid-area: f;}
+#a {
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+}
+
+#b {
+    grid-area: b;
+}
+
+#c {
+    grid-area: c;
+}
+
+#d {
+    grid-area: d;
+}
+
+#e {
+    grid-area: e;
+}
+
+#f {
+    grid-area: f;
+}
 
 #gr {
+    grid-area: gr;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -302,11 +350,13 @@ footer {
         "f f";
 }
 
+/* RESPONSIVE */
 @media (max-width:840px) {
     .list-card {
         display: grid;
         grid-template-columns: 1fr;
     }
+
     #gr {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -318,6 +368,7 @@ footer {
             "d d"
             "e e"
             "f f";
+    }
 
     .grid {
         display: grid;
